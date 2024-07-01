@@ -8,7 +8,7 @@ export const isAuthenticated = async (
   next: express.NextFunction
 ) => {
   try {
-    const sessionToken = req.cookies["TEONA-AUTH"];
+    const sessionToken = req.cookies["TEONA_AUTH"];
 
     if (!sessionToken) {
       return res.sendStatus(403);
